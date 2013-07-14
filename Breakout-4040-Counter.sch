@@ -1,0 +1,262 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:conn
+LIBS:cmos4000
+LIBS:Breakout-4040-Counter-cache
+EELAYER 24 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Breakout for CMOS 4040 Counter"
+Date "14 Jul 2013"
+Rev "1.0"
+Comp "Released under the Creative Commons Attribution Share-Alike 3.0"
+Comment1 "Schematic and PCB design by Dimitar Kovachev"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 4040 U1
+U 1 1 51D9484F
+P 4850 3000
+F 0 "U1" H 4950 3650 60  0000 C CNN
+F 1 "4040" H 5100 2350 60  0000 C CNN
+F 2 "" H 4850 3000 60  0000 C CNN
+F 3 "" H 4850 3000 60  0000 C CNN
+	1    4850 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2450 5850 2450
+Wire Wire Line
+	5500 2550 5850 2550
+Wire Wire Line
+	5500 2650 5850 2650
+Wire Wire Line
+	5500 2750 5850 2750
+Wire Wire Line
+	5500 2850 5850 2850
+Wire Wire Line
+	5500 2950 5850 2950
+Wire Wire Line
+	5500 3050 5850 3050
+Wire Wire Line
+	5500 3150 5850 3150
+Wire Wire Line
+	5500 3250 5850 3250
+Wire Wire Line
+	5500 3350 5850 3350
+Wire Wire Line
+	5500 3450 5850 3450
+Wire Wire Line
+	5500 3550 5850 3550
+Text Label 5600 2450 0    60   ~ 0
+Q0
+Text Label 5600 2550 0    60   ~ 0
+Q1
+Text Label 5600 2650 0    60   ~ 0
+Q2
+Text Label 5600 2750 0    60   ~ 0
+Q3
+Text Label 5600 2850 0    60   ~ 0
+Q4
+Text Label 5600 2950 0    60   ~ 0
+Q5
+Text Label 5600 3050 0    60   ~ 0
+Q6
+Text Label 5600 3150 0    60   ~ 0
+Q7
+Text Label 5600 3250 0    60   ~ 0
+Q8
+Text Label 5600 3350 0    60   ~ 0
+Q9
+Text Label 5600 3450 0    60   ~ 0
+Q10
+Text Label 5600 3550 0    60   ~ 0
+Q11
+$Comp
+L CONN_4 P1
+U 1 1 51D9489B
+P 3150 2400
+F 0 "P1" V 3100 2400 50  0000 C CNN
+F 1 "CONN_INP" V 3200 2400 50  0000 C CNN
+F 2 "" H 3150 2400 60  0000 C CNN
+F 3 "" H 3150 2400 60  0000 C CNN
+	1    3150 2400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 2450 3500 2450
+Wire Wire Line
+	3500 2550 3650 2550
+Wire Wire Line
+	3650 2550 3650 3000
+Wire Wire Line
+	3650 2750 4200 2750
+Text Label 3700 2450 0    60   ~ 0
+CLOCK
+Text Label 3850 2750 0    60   ~ 0
+RESET
+Wire Wire Line
+	3500 2350 3800 2350
+Wire Wire Line
+	3800 2350 3800 2150
+$Comp
+L GND #PWR01
+U 1 1 51D94910
+P 3550 2250
+F 0 "#PWR01" H 3550 2250 30  0001 C CNN
+F 1 "GND" H 3550 2180 30  0001 C CNN
+F 2 "" H 3550 2250 60  0000 C CNN
+F 3 "" H 3550 2250 60  0000 C CNN
+	1    3550 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3550 2250 3500 2250
+$Comp
+L VCC #PWR02
+U 1 1 51D94933
+P 3800 2150
+F 0 "#PWR02" H 3800 2250 30  0001 C CNN
+F 1 "VCC" H 3800 2250 30  0000 C CNN
+F 2 "" H 3800 2150 60  0000 C CNN
+F 3 "" H 3800 2150 60  0000 C CNN
+	1    3800 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR03
+U 1 1 51D94942
+P 2550 2900
+F 0 "#PWR03" H 2550 3000 30  0001 C CNN
+F 1 "VCC" H 2550 3000 30  0000 C CNN
+F 2 "" H 2550 2900 60  0000 C CNN
+F 3 "" H 2550 2900 60  0000 C CNN
+	1    2550 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 51D9494F
+P 2550 3500
+F 0 "#PWR04" H 2550 3500 30  0001 C CNN
+F 1 "GND" H 2550 3430 30  0001 C CNN
+F 2 "" H 2550 3500 60  0000 C CNN
+F 3 "" H 2550 3500 60  0000 C CNN
+	1    2550 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 51D94957
+P 2550 3200
+F 0 "C1" H 2550 3300 40  0000 L CNN
+F 1 "100nF" H 2556 3115 40  0000 L CNN
+F 2 "" H 2588 3050 30  0000 C CNN
+F 3 "" H 2550 3200 60  0000 C CNN
+	1    2550 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2900 2550 3000
+Wire Wire Line
+	2550 3400 2550 3500
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 51D949BB
+P 2750 2900
+F 0 "#FLG05" H 2750 2995 30  0001 C CNN
+F 1 "PWR_FLAG" H 2750 3080 30  0000 C CNN
+F 2 "" H 2750 2900 60  0000 C CNN
+F 3 "" H 2750 2900 60  0000 C CNN
+	1    2750 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG06
+U 1 1 51D949CA
+P 2750 3500
+F 0 "#FLG06" H 2750 3595 30  0001 C CNN
+F 1 "PWR_FLAG" H 2750 3680 30  0000 C CNN
+F 2 "" H 2750 3500 60  0000 C CNN
+F 3 "" H 2750 3500 60  0000 C CNN
+	1    2750 3500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2550 3450 2750 3450
+Wire Wire Line
+	2750 3450 2750 3500
+Connection ~ 2550 3450
+Wire Wire Line
+	2550 2950 2750 2950
+Wire Wire Line
+	2750 2950 2750 2900
+Connection ~ 2550 2950
+$Comp
+L CONN_12 P2
+U 1 1 51D94A6D
+P 6200 3000
+F 0 "P2" V 6150 3000 60  0000 C CNN
+F 1 "CONN_SIL" V 6250 3000 60  0000 C CNN
+F 2 "" H 6200 3000 60  0000 C CNN
+F 3 "" H 6200 3000 60  0000 C CNN
+	1    6200 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR07
+U 1 1 51D94B0C
+P 4850 2400
+F 0 "#PWR07" H 4850 2500 30  0001 C CNN
+F 1 "VCC" H 4850 2500 30  0000 C CNN
+F 2 "" H 4850 2400 60  0000 C CNN
+F 3 "" H 4850 2400 60  0000 C CNN
+	1    4850 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 51D94B12
+P 4850 3650
+F 0 "#PWR08" H 4850 3650 30  0001 C CNN
+F 1 "GND" H 4850 3580 30  0001 C CNN
+F 2 "" H 4850 3650 60  0000 C CNN
+F 3 "" H 4850 3650 60  0000 C CNN
+	1    4850 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3650 4850 3600
+$Comp
+L R R1
+U 1 1 51D94BB7
+P 3650 3250
+F 0 "R1" V 3730 3250 40  0000 C CNN
+F 1 "10k" V 3657 3251 40  0000 C CNN
+F 2 "" V 3580 3250 30  0000 C CNN
+F 3 "" H 3650 3250 30  0000 C CNN
+	1    3650 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 51D94BD0
+P 3650 3650
+F 0 "#PWR09" H 3650 3650 30  0001 C CNN
+F 1 "GND" H 3650 3580 30  0001 C CNN
+F 2 "" H 3650 3650 60  0000 C CNN
+F 3 "" H 3650 3650 60  0000 C CNN
+	1    3650 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3650 3650 3500
+Text Notes 3200 3900 0    60   ~ 0
+R1 is an optional pull-down\nif RESET line is not driven
+Connection ~ 3650 2750
+$EndSCHEMATC

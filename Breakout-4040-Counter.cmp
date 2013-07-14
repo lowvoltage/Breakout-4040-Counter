@@ -1,0 +1,38 @@
+Cmp-Mod V01 Created by CvPcb (2013-jun-18)-testing date = Sun 14 Jul 2013 04:10:45 PM EEST
+
+BeginCmp
+TimeStamp = /51D94957;
+Reference = C1;
+ValeurCmp = 100nF;
+IdModule  = C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51D9489B;
+Reference = P1;
+ValeurCmp = CONN_INP;
+IdModule  = pin_strip_4-90;
+EndCmp
+
+BeginCmp
+TimeStamp = /51D94A6D;
+Reference = P2;
+ValeurCmp = CONN_SIL;
+IdModule  = pin_strip_12-90;
+EndCmp
+
+BeginCmp
+TimeStamp = /51D94BB7;
+Reference = R1;
+ValeurCmp = 10k;
+IdModule  = R4;
+EndCmp
+
+BeginCmp
+TimeStamp = /51D9484F;
+Reference = U1;
+ValeurCmp = 4040;
+IdModule  = dil_16-300;
+EndCmp
+
+EndListe
